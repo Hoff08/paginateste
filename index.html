@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título Atualizado -->
     <title>Portfólio - Vicenzo Hoffmann</title>
-    <!-- Link para a biblioteca de fontes (ex: Google Fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Link para a biblioteca de ícones (ex: Font Awesome) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
@@ -23,8 +20,6 @@
         }
 
         :root {
-            /* Cores Modificadas para Cor Lago Frias */
-            /* !! SUBSTITUA #008080 PELA SUA COR LAGO FRIAS EXATA !! */
             --color-primary: #008080; /* Cor Lago Frias (Exemplo: Azul-Petróleo) */
             --color-secondary: #1C3A34; /* Verde Escuro (Mantido) */
             --color-background-light: #F5F3EF; /* Bege Claro */
@@ -40,7 +35,7 @@
         }
 
         html {
-             scroll-behavior: smooth; /* Rolagem suave para links internos */
+             scroll-behavior: smooth;
         }
 
         body {
@@ -53,19 +48,19 @@
         h1, h2, h3, h4 {
             line-height: 1.3;
             margin-bottom: 0.75em;
-            font-weight: 600; /* Ajuste conforme necessário */
+            font-weight: 600;
         }
 
-        h1 { font-size: 3.5rem; } /* Aproximado */
+        h1 { font-size: 3.5rem; }
         h2 { font-size: 2.5rem; }
         h3 { font-size: 1.5rem; }
         h4 { font-size: 1.1rem; }
 
         p {
             margin-bottom: 1em;
-            color: var(--color-text-muted); /* Cor padrão suave para parágrafos */
+            color: var(--color-text-muted);
         }
-        section h2 + p { /* Parágrafo diretamente após o título da seção */
+        section h2 + p {
            max-width: 600px;
            margin-left: auto;
            margin-right: auto;
@@ -75,7 +70,7 @@
 
         a {
             text-decoration: none;
-            color: var(--color-primary); /* Agora usará a Cor Lago Frias */
+            color: var(--color-primary);
         }
 
         img {
@@ -107,29 +102,25 @@
         }
 
         .btn-primary {
-            background-color: var(--color-primary); /* Agora usará a Cor Lago Frias */
+            background-color: var(--color-primary);
             color: var(--color-text-light);
         }
         .btn-primary:hover {
-            /* !! AJUSTE #006666 SE NECESSÁRIO PARA UM TOM MAIS ESCURO DA SUA COR LAGO FRIAS !! */
-            background-color: #006666; /* Tom mais escuro da Cor Lago Frias (Exemplo) */
+            background-color: #006666; /* Tom mais escuro */
             transform: translateY(-2px);
         }
 
         .btn-secondary {
             background-color: transparent;
-            color: var(--color-primary); /* Agora usará a Cor Lago Frias */
-            border: 1px solid var(--color-primary); /* Agora usará a Cor Lago Frias */
-            /* Fundo com base na NOVA cor primária */
-            /* !! USA O RGB DA COR LAGO FRIAS - (0, 128, 128) para #008080 !! */
+            color: var(--color-primary);
+            border: 1px solid var(--color-primary);
             background-color: rgba(0, 128, 128, 0.1); /* Fundo claro Cor Lago Frias */
         }
         .btn-secondary:hover {
-             /* !! USA O RGB DA COR LAGO FRIAS !! */
              background-color: rgba(0, 128, 128, 0.2); /* Fundo claro hover Cor Lago Frias */
         }
 
-        .btn i { /* Espaçamento do ícone */
+        .btn i {
             margin-left: 8px;
         }
 
@@ -139,13 +130,13 @@
 
         /* --- Cabeçalho --- */
         .header {
-            background-color: var(--color-background-light); /* Ou ligeiramente diferente se necessário */
+            background-color: var(--color-background-light);
             padding: 15px 0;
-            border-bottom: 1px solid #eee; /* Borda sutil */
-            position: sticky; /* Opcional: tornar o cabeçalho fixo */
+            border-bottom: 1px solid #eee;
+            position: sticky;
             top: 0;
             z-index: 100;
-            background: rgba(245, 243, 239, 0.9); /* Adiciona leve transparência se fixo */
+            background: rgba(245, 243, 239, 0.9);
             backdrop-filter: blur(5px);
         }
 
@@ -161,10 +152,11 @@
             font-weight: 700;
             font-size: 1.5rem;
             color: var(--color-text-dark);
+            text-decoration: none; /* Garantir que não haja sublinhado */
         }
         .logo img {
-            height: 45px; /* Ajuste */
-            margin-right: 10px; /* Aumentei o espaçamento */
+            height: 45px;
+            margin-right: 10px;
         }
 
         .main-nav ul {
@@ -178,15 +170,15 @@
             transition: color 0.3s ease;
         }
         .main-nav a:hover {
-            color: var(--color-primary); /* Usará Cor Lago Frias */
+            color: var(--color-primary);
         }
 
         .btn-contact-header {
-            padding: 10px 24px; /* Ligeiramente menor */
+            padding: 10px 24px;
         }
 
         .mobile-nav-toggle {
-            display: none; /* Oculto por padrão */
+            display: none;
             background: none;
             border: none;
             font-size: 1.5rem;
@@ -196,7 +188,7 @@
 
         /* --- Seção Hero --- */
         .hero {
-            padding-top: 60px; /* Ajuste se o cabeçalho for fixo */
+            padding-top: 60px;
             padding-bottom: 100px;
         }
 
@@ -235,11 +227,11 @@
         }
         .hero-main-image {
             border-radius: var(--border-radius-large);
-            max-width: 80%; /* Ajuste o tamanho relativo ao container */
+            max-width: 80%;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
-        /* --- Seção Proposta de Valor (Adaptada: O que você verá) --- */
+        /* --- Seção Proposta de Valor --- */
         .value-prop {
             background-color: var(--color-background-light);
             text-align: center;
@@ -252,8 +244,16 @@
              margin-bottom: 1.5em;
              font-size: 2rem;
         }
+         /* Garante que a div container esteja presente */
+        .value-prop-container {
+             /* Nenhum estilo específico necessário aqui, mas a div deve existir no HTML */
+        }
+         .value-prop-content {
+             /* Nenhum estilo específico necessário aqui */
+         }
 
-        /* --- Seção Escura de Funcionalidades (Adaptada: Por que explorar?) --- */
+
+        /* --- Seção Escura de Funcionalidades (O Processo) --- */
         .features-dark {
             background-color: var(--color-background-dark);
             color: var(--color-text-light);
@@ -277,7 +277,6 @@
             margin-bottom: 3em;
         }
 
-        /* Estilo para a lista numerada */
         .process-list {
             max-width: 900px;
             margin: 40px auto 0;
@@ -302,7 +301,7 @@
             transform: translateY(-50%);
             font-size: 1.8rem;
             font-weight: 700;
-            color: var(--color-primary); /* Cor do número agora usa Cor Lago Frias */
+            color: var(--color-primary);
             line-height: 1;
         }
         .process-list h3 {
@@ -318,7 +317,7 @@
         }
 
 
-        /* --- Seção Clara de Funcionalidades (Adaptada: Disciplinas) --- */
+        /* --- Seção Clara de Funcionalidades (Disciplinas) --- */
         .features-light h2, .features-light > .container > p {
             text-align: center;
         }
@@ -361,18 +360,18 @@
         .feature-item p {
             font-size: 0.95rem;
             margin-bottom: 1.5em;
-            flex-grow: 1;
+            flex-grow: 1; /* Faz o parágrafo ocupar espaço para empurrar o botão para baixo */
         }
          .feature-item .btn {
-            margin-top: auto;
+            margin-top: auto; /* Alinha o botão na parte inferior */
             width: fit-content;
             align-self: flex-start;
          }
 
 
-        /* --- Seção Funcionalidades Principais (Adaptada: Sobre Mim) --- */
+        /* --- Seção Funcionalidades Principais (Sobre Mim) --- */
         .core-features {
-             margin-top: 80px;
+             margin-top: 80px; /* Adicionado para separar visualmente */
              background-color: var(--color-background-dark);
              color: var(--color-text-light);
              padding: 80px 0;
@@ -384,7 +383,7 @@
              text-align: center;
              margin-bottom: 1em;
          }
-         .core-features > .container > p {
+         .core-features > .container > p { /* Parágrafo introdutório */
              text-align: center;
              max-width: 700px;
              margin-left: auto;
@@ -396,7 +395,7 @@
 
         .core-features-container {
             display: flex;
-            align-items: flex-start;
+            align-items: flex-start; /* Alinha itens no topo */
             gap: 60px;
         }
         .core-features-content {
@@ -406,11 +405,12 @@
             flex: 0.8;
             display: flex;
             justify-content: center;
-            margin-top: 10px;
+            margin-top: 10px; /* Leve ajuste se necessário */
         }
         .core-features-image img {
             border-radius: var(--border-radius-medium);
             max-width: 100%;
+            height: auto; /* Garante proporção */
             object-fit: cover;
             box-shadow: 0 8px 25px rgba(0,0,0,0.2);
         }
@@ -430,12 +430,10 @@
             gap: 15px;
         }
         .skill-card .icon {
-            color: var(--color-primary); /* Cor do ícone agora usa Cor Lago Frias */
+            color: var(--color-primary);
             font-size: 1.8rem;
             flex-shrink: 0;
-            /* Fundo opcional para ícone com base na NOVA cor primária */
-            /* !! USA O RGB DA COR LAGO FRIAS (0, 128, 128) !! */
-             background-color: rgba(0, 128, 128, 0.1); /* Fundo do ícone Cor Lago Frias claro */
+            background-color: rgba(0, 128, 128, 0.1);
             width: 50px;
             height: 50px;
             display: flex;
@@ -477,6 +475,7 @@
         .footer-about .logo {
             margin-bottom: 1em;
             font-size: 1.3rem;
+            color: var(--color-text-light); /* Garante cor do texto no logo */
         }
          .footer-about .logo img {
              height: 40px;
@@ -484,6 +483,7 @@
         .footer-about p {
             font-size: 0.9rem;
             max-width: 350px;
+            color: rgba(255, 255, 255, 0.7); /* Garante cor do texto */
         }
 
         .footer-links h4 {
@@ -494,6 +494,7 @@
         .footer-links ul {
             list-style: none;
             padding: 0;
+            margin: 0; /* Remove margem padrão da lista */
         }
         .footer-links li {
             margin-bottom: 0.8em;
@@ -528,6 +529,7 @@
             padding: 20px 0;
             text-align: center;
             font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7); /* Garante cor do texto */
         }
 
 
@@ -536,38 +538,53 @@
             h1 { font-size: 2.8rem; }
             h2 { font-size: 2rem; }
 
-             .header-container { flex-wrap: wrap; }
-            .main-nav { display: none; order: 3; width: 100%; margin-top: 15px; }
-            /* Estilo para quando o menu mobile está ativo */
-            .main-nav.active { display: block; }
-            .main-nav ul { flex-direction: column; gap: 15px; text-align: center; }
-            .mobile-nav-toggle { display: block; order: 2; } /* Mostra o botão mobile */
-
-            /* >>> ALTERAÇÃO AQUI <<< */
-            /* Esconde o botão "Ver Projetos" no header em telas menores */
-            .btn-contact-header {
-                display: none;
+            .header-container { flex-wrap: wrap; }
+            .main-nav {
+                display: none; /* Escondido por padrão */
+                order: 3;
+                width: 100%;
+                margin-top: 15px;
+                background-color: var(--color-background-light); /* Fundo para o menu mobile */
+                padding: 15px 0;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra sutil */
             }
-            /* >>> FIM DA ALTERAÇÃO <<< */
+            .main-nav.active {
+                display: block; /* Mostra quando ativo */
+            }
+            .main-nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            .mobile-nav-toggle {
+                display: block;
+                order: 2;
+            }
+            .btn-contact-header {
+                display: none; /* Esconde o botão "Ver Projetos" no header mobile */
+            }
 
+            .hero-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px; /* Reduz gap no mobile */
+            }
+            .hero-content { order: 2; }
+            .hero-image-area { order: 1; margin-bottom: 30px; }
+            .hero-main-image { max-width: 90%; } /* Ajuste leve */
+            .hero-buttons { justify-content: center; }
 
-            .hero-container { flex-direction: column; text-align: center; } /* Empilha o conteúdo */
-            .hero-content { order: 2; } /* Coloca o texto abaixo da imagem */
-            .hero-image-area { order: 1; margin-bottom: 30px; } /* Coloca a imagem acima */
-            .hero-main-image { max-width: 100%; } /* Garante que a imagem não estoure */
-            .hero-buttons { justify-content: center; } /* Centraliza os botões */
+            .process-list li { padding: 20px 25px 20px 65px; }
+            .process-list li::before { left: 15px; font-size: 1.5rem; }
 
-             .process-list li { padding: 20px 25px 20px 65px; } /* Ajusta padding da lista */
-             .process-list li::before { left: 15px; font-size: 1.5rem; } /* Ajusta posição/tamanho do número */
+            .feature-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
 
-             .feature-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); } /* Ajusta grid */
+            .core-features-container { flex-direction: column; gap: 40px; }
+            .core-features-image { order: 1; margin-bottom: 30px; max-width: 70%; margin-left: auto; margin-right: auto;}
+            .core-features-content { order: 2; }
+            .skills-list { grid-template-columns: 1fr; gap: 20px; }
 
-            .core-features-container { flex-direction: column; } /* Empilha sobre mim */
-            .core-features-image { order: 1; margin-bottom: 40px; max-width: 70%; margin-left: auto; margin-right: auto;} /* Imagem primeiro */
-            .core-features-content { order: 2; } /* Conteúdo depois */
-            .skills-list { grid-template-columns: 1fr; } /* Skills em uma coluna */
-
-            .footer-container { grid-template-columns: 1fr; text-align: center; gap: 30px;} /* Rodapé em uma coluna */
+            .footer-container { grid-template-columns: 1fr; text-align: center; gap: 30px;}
             .footer-about, .footer-links, .footer-social { text-align: center; }
             .footer-social { margin-top: 10px; }
             .footer-about p { margin-left: auto; margin-right: auto; }
@@ -575,20 +592,25 @@
         }
 
         @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; } /* Reduz mais a fonte */
+            h1 { font-size: 2.2rem; }
             h2 { font-size: 1.8rem; }
-            section { padding: 60px 0; } /* Reduz padding das seções */
+            section { padding: 60px 0; }
 
-            .btn { padding: 10px 20px; } /* Reduz padding dos botões */
+            .btn { padding: 10px 20px; }
 
-            .features-dark { padding: 60px 20px; } /* Ajusta padding */
+            .features-dark { padding: 60px 20px; margin: 20px auto; } /* Ajusta padding e margem */
             .core-features { padding: 60px 0; }
-            .core-features-container { gap: 30px; } /* Reduz espaçamento */
-             .core-features-image { max-width: 85%; } /* Ajusta tamanho da imagem */
+            .core-features-container { gap: 30px; }
+            .core-features-image { max-width: 85%; }
 
-             .process-list li { padding: 15px 20px 15px 55px; } /* Ajusta mais o padding */
-             .process-list li::before { left: 10px; font-size: 1.3rem; } /* Ajusta mais o número */
+            .process-list li { padding: 15px 20px 15px 55px; margin-bottom: 20px; }
+            .process-list li::before { left: 10px; font-size: 1.3rem; }
 
+            .feature-grid { grid-template-columns: 1fr; } /* Uma coluna em telas bem pequenas */
+
+            .skills-list { gap: 15px; }
+            .skill-card { padding: 20px; gap: 12px; }
+            .skill-card .icon { width: 45px; height: 45px; font-size: 1.6rem; }
         }
 
         /* --- FIM DO CSS --- */
@@ -599,9 +621,8 @@
     <!-- Seção Cabeçalho -->
     <header class="header">
         <div class="container header-container">
-            <a class="logo" href="#"> <!-- Adicionado href="#" para ser clicável -->
+            <a class="logo" href="#hero"> <!-- Link para o início da página -->
                 <img src="cert.png" alt="Logo Vicenzo">
-                <!-- !! SUBSTITUA pelo seu logo ou remova a tag <img> se não tiver !! -->
                 <span>Vicenzo Hoffmann</span>
             </a>
             <nav class="main-nav">
@@ -612,10 +633,9 @@
                      <li><a href="#sobre-mim">Sobre Mim</a></li>
                  </ul>
             </nav>
-            <!-- Este botão agora será escondido no mobile pela regra CSS adicionada -->
             <a href="#disciplinas" class="btn btn-primary btn-contact-header">Ver Projetos</a>
             <button class="mobile-nav-toggle" aria-label="Alternar navegação">
-                <i class="fas fa-bars"></i> <!-- Ícone inicial do menu -->
+                <i class="fas fa-bars"></i> <!-- Ícone inicial -->
             </button>
         </div>
     </header>
@@ -633,24 +653,23 @@
                     </div>
                 </div>
                 <div class="hero-image-area">
-                     <!-- !! SUBSTITUA pela sua foto profissional ou imagem de destaque !! -->
                     <img src="Design sem nome.png" alt="Foto de Vicenzo Hoffmann" class="hero-main-image">
                 </div>
             </div>
         </section>
 
-        <!-- Seção Proposta de Valor (Adaptada: O que você verá) -->
+        <!-- Seção Proposta de Valor -->
         <section class="value-prop" id="proposta">
             <div class="container value-prop-container">
                  <div class="value-prop-content">
                     <h2>Aqui, você verá não apenas os resultados finais, mas também o <strong>processo de aprendizagem</strong>, incluindo os desafios que enfrentei e como os superei.</h2>
                     <a href="#processo" class="btn btn-primary">Entenda o Processo <i class="fas fa-arrow-right"></i></a>
                  </div>
-            </div> <!-- Fechamento da div container que estava faltando -->
+            </div>
         </section>
 
 
-        <!-- Seção Escura (Adaptada: Por que explorar? - O Processo) -->
+        <!-- Seção Escura (O Processo) -->
         <section class="features-dark" id="processo">
             <div class="container">
                 <h2>Por Que Explorar Este Portfólio?</h2>
@@ -681,7 +700,7 @@
             </div>
         </section>
 
-        <!-- Seção Clara (Adaptada: Disciplinas) -->
+        <!-- Seção Clara (Disciplinas) -->
         <section class="features-light" id="disciplinas">
             <div class="container">
                  <h2>Disciplinas e Áreas de Conhecimento</h2>
@@ -690,53 +709,58 @@
                     <!-- Item Disciplina 1 -->
                     <div class="feature-item">
                         <div class="feature-mockup">
-                             <img src="matematica.png" alt="Ícone ou Imagem representativa de Matemática">
+                             <img src="matematica.png" alt="Ícone Matemática">
                         </div>
-                        <h3>Disciplina 1 - Matemática</h3>
+                        <h3>Matemática</h3>
                         <p>Projetos e atividades que demonstram raciocínio lógico, resolução de problemas e aplicação de conceitos matemáticos.</p>
-                         <a href="https://sites.google.com/estudante.sesisenai.org.br/portifolioterceiroano/matematica" class="btn btn-secondary">Ver Detalhes</a>
+                         <!-- !! VERIFIQUE ESTE LINK !! -->
+                         <a href="https://sites.google.com/estudante.sesisenai.org.br/portifolioterceiroano/matematica" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Ver Detalhes</a>
                     </div>
                     <!-- Item Disciplina 2 -->
                     <div class="feature-item">
                         <div class="feature-mockup">
-                            <img src="linguagens.png" alt="Ícone ou Imagem representativa de Linguagens">
+                            <img src="linguagens.png" alt="Ícone Linguagens">
                         </div>
-                        <h3>Disciplina 2 - Linguagens</h3>
+                        <h3>Linguagens</h3>
                         <p>Trabalhos relacionados à comunicação, interpretação, produção textual e expressão em diferentes linguagens.</p>
-                         <a href="https://sites.google.com/estudante.sesisenai.org.br/portifolioterceiroano/linguagens" class="btn btn-secondary">Ver Detalhes</a>
+                         <!-- !! VERIFIQUE ESTE LINK !! -->
+                         <a href="https://sites.google.com/estudante.sesisenai.org.br/portifolioterceiroano/linguagens" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Ver Detalhes</a>
                     </div>
                      <!-- Item Disciplina 3 -->
                      <div class="feature-item">
                          <div class="feature-mockup">
-                            <img src="Ciências da Natureza.png" alt="Ícone ou Imagem representativa de Ciências da Natureza">
+                            <img src="Ciências da Natureza.png" alt="Ícone Ciências da Natureza">
                         </div>
-                        <h3>Disciplina 3 - Ciências da Natureza</h3>
+                        <h3>Ciências da Natureza</h3>
                         <p>Exploração de conceitos de física, química e biologia através de experimentos, pesquisas e projetos aplicados.</p>
-                        <a href="https://sites.google.com/estudante.sesisenai.org.br/portifolioterceiroano/natureza" class="btn btn-secondary">Ver Detalhes</a>
+                         <!-- !! VERIFIQUE ESTE LINK !! -->
+                        <a href="https://sites.google.com/estudante.sesisenai.org.br/portifolioterceiroano/natureza" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Ver Detalhes</a>
                     </div>
                      <!-- Item Disciplina 4 -->
                      <div class="feature-item">
                          <div class="feature-mockup">
-                            <img src="Ciências Humanas.png" alt="Ícone ou Imagem representativa de Ciências Humanas">
+                            <img src="Ciências Humanas.png" alt="Ícone Ciências Humanas">
                         </div>
-                        <h3>Disciplina 4 - Ciências Humanas</h3>
+                        <h3>Ciências Humanas</h3>
                         <p>Análises sobre sociedade, história, geografia e cultura, desenvolvendo pensamento crítico e compreensão do mundo.</p>
-                         <a href="https://sites.google.com/estudante.sesisenai.org.br/portifolioterceiroano/humanas" class="btn btn-secondary">Ver Detalhes</a>
+                         <!-- !! VERIFIQUE ESTE LINK !! -->
+                         <a href="https://sites.google.com/estudante.sesisenai.org.br/portifolioterceiroano/humanas" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Ver Detalhes</a>
                     </div>
                      <!-- Item Disciplina 5 -->
                       <div class="feature-item">
                          <div class="feature-mockup">
-                            <img src="Área Técnica.png" alt="Ícone ou Imagem representativa da Área Técnica">
+                            <img src="Área Técnica.png" alt="Ícone Área Técnica">
                         </div>
-                        <h3>Disciplina 5 - Área Técnica</h3>
+                        <h3>Área Técnica</h3>
                         <p>Projetos e competências desenvolvidas na área técnica específica do curso, demonstrando habilidades práticas e conhecimento especializado.</p>
-                         <a href="https://sites.google.com/estudante.sesisenai.org.br/portifolioterceiroano/areatecnica" class="btn btn-secondary">Ver Detalhes</a>
+                         <!-- !! VERIFIQUE ESTE LINK !! -->
+                         <a href="https://sites.google.com/estudante.sesisenai.org.br/portifolioterceiroano/areatecnica" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Ver Detalhes</a>
                     </div>
                  </div>
             </div>
         </section>
 
-        <!-- Seção Funcionalidades Principais (Adaptada: Sobre Mim) -->
+        <!-- Seção Sobre Mim -->
         <section class="core-features" id="sobre-mim">
              <div class="container">
                  <h2>Sobre Mim</h2>
@@ -776,7 +800,6 @@
                         </div>
                      </div>
                      <div class="core-features-image">
-                        <!-- !! SUBSTITUA PELA SUA FOTO !! -->
                         <img src="minhaft.png" alt="Foto de Vicenzo Hoffmann">
                      </div>
                  </div>
@@ -789,7 +812,7 @@
     <footer class="footer">
         <div class="container footer-container">
              <div class="footer-about">
-                 <a class="logo" href="#"> <!-- Adicionado href="#" -->
+                 <a class="logo" href="#hero"> <!-- Link para o início -->
                     <img src="cert.png" alt="Logo Vicenzo">
                     <span>Vicenzo Hoffmann</span>
                  </a>
@@ -807,10 +830,10 @@
             </div>
              <div class="footer-social">
                  <h4>Conecte-se</h4>
-                 <!-- !! SUBSTITUA '#' pelos links reais das suas redes sociais !! -->
-                 <a href="#" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                 <a href="#" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-                 <a href="#" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                 <!-- !! SUBSTITUA '#' pelos links reais !! -->
+                 <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                 <a href="#" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                 <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
              </div>
         </div>
         <div class="container footer-bottom">
@@ -823,27 +846,25 @@
         document.addEventListener('DOMContentLoaded', () => {
             const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
             const mainNav = document.querySelector('.main-nav');
-            const body = document.body; // Seleciona o body
+            const body = document.body;
 
             if (mobileNavToggle && mainNav) {
-                mobileNavToggle.addEventListener('click', () => {
-                    mainNav.classList.toggle('active'); // Mostra/esconde o menu
-                    // Troca o ícone do botão
+                mobileNavToggle.addEventListener('click', (event) => {
+                    event.stopPropagation(); // Impede que o clique no botão feche o menu imediatamente
+                    mainNav.classList.toggle('active');
                     const icon = mobileNavToggle.querySelector('i');
                     if (mainNav.classList.contains('active')) {
                         icon.classList.remove('fa-bars');
                         icon.classList.add('fa-times');
-                        // Opcional: impedir rolagem do body quando menu aberto
-                        // body.style.overflow = 'hidden';
+                        // body.style.overflow = 'hidden'; // Descomente se quiser impedir scroll
                     } else {
                         icon.classList.remove('fa-times');
                         icon.classList.add('fa-bars');
-                        // Opcional: permitir rolagem novamente
-                        // body.style.overflow = '';
+                        // body.style.overflow = ''; // Descomente se usou a linha acima
                     }
                 });
 
-                // Fecha o menu ao clicar em um link dentro dele (para SPAs ou navegação interna)
+                // Fecha o menu ao clicar em um link DENTRO dele
                 const navLinks = mainNav.querySelectorAll('a');
                 navLinks.forEach(link => {
                     link.addEventListener('click', () => {
@@ -852,14 +873,12 @@
                              const icon = mobileNavToggle.querySelector('i');
                              icon.classList.remove('fa-times');
                              icon.classList.add('fa-bars');
-                             // Opcional: permitir rolagem novamente
-                             // body.style.overflow = '';
+                             // body.style.overflow = ''; // Descomente se usou a linha acima
                         }
                     });
                 });
 
-                 // Opcional: Fechar o menu se clicar fora dele
-                 /*
+                 // Opcional: Fechar o menu se clicar FORA dele
                  document.addEventListener('click', (event) => {
                     const isClickInsideNav = mainNav.contains(event.target);
                     const isClickOnToggle = mobileNavToggle.contains(event.target);
@@ -869,10 +888,9 @@
                          const icon = mobileNavToggle.querySelector('i');
                          icon.classList.remove('fa-times');
                          icon.classList.add('fa-bars');
-                         body.style.overflow = '';
+                         // body.style.overflow = ''; // Descomente se usou a linha acima
                     }
                  });
-                 */
             }
         });
         // --- FIM DO JAVASCRIPT ---
